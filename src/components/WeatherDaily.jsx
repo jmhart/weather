@@ -1,16 +1,20 @@
 import React from "react";
-import WeatherItem from "./WeatherItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WeatherDaily = ({ data }) => {
-  const weatherItems = data.map(d => (
-    <div key={d.id} className="col">
-      <WeatherItem dayOfWeek={d.time} temp={d.temp} />
-    </div>
+  const weatherRows = data.map(d => (
+    <tr>
+      <td>{d.time}</td>
+      <td>
+        <FontAwesomeIcon icon="cloud-sun-rain" />
+      </td>
+      <td>{d.temp}</td>
+    </tr>
   ));
   return (
-    <div className="container">
-      <div className="row">{weatherItems}</div>
-    </div>
+    <table className="table">
+      <tbody>{weatherRows}</tbody>
+    </table>
   );
 };
 

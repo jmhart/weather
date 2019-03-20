@@ -24,11 +24,11 @@ class Weather extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="container">
         <WeatherCurrently data={this.state.currently} />
         <WeatherHourly data={this.state.hourly} />
         <WeatherDaily data={this.state.daily} />
-      </React.Fragment>
+      </div>
     );
   }
 }
