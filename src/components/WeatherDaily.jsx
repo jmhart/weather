@@ -6,7 +6,7 @@ const WeatherDaily = ({ data }) => {
     <tr>
       <td>{d.time}</td>
       <td>
-        <FontAwesomeIcon icon="cloud-sun-rain" />
+        <FontAwesomeIcon icon={d.icon} />
       </td>
       <td>{d.temp}</td>
     </tr>

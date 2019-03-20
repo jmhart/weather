@@ -5,7 +5,7 @@ const WeatherItem = ({ dayOfWeek, icon, temp }) => {
   return (
     <div className="weather-item">
       <div className="weather-item-day">{dayOfWeek}</div>
-      <FontAwesomeIcon icon="cloud-sun-rain" />
+      <FontAwesomeIcon icon={icon} />
       <div className="weather-item-temp">{temp}&#176;</div>
     </div>
   );
