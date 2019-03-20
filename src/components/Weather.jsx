@@ -1,14 +1,28 @@
 import React, { Component } from "react";
-import "../weather.css";
+import WeatherCurrently from "./WeatherCurrently";
+import WeatherDaily from "./WeatherDaily";
+import {
+  getCurrentWeather,
+  getDailyWeather
+} from "../services/fakeWeatherService";
 
 class Weather extends Component {
-  state = {};
+  state = {
+    currently: {},
+    daily: []
+  };
+
+  componentDidMount() {
+    const currently = getCurrentWeather();
+    const daily = getDailyWeather();
+    this.setState({ currently, daily });
+  }
+
   render() {
     return (
       <React.Fragment>
-        <div className="weather-main-location">Chicago</div>
-        <div className="weather-main-description">Mostly Sunny</div>
-        <div className="weather-main-temperature">47&#176;</div>
+        <WeatherCurrently data={this.state.currently} />
+        <WeatherDaily data={this.state.daily} />
       </React.Fragment>
     );
   }

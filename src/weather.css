@@ -1,3 +1,7 @@
+.weather-main {
+  padding-bottom: 30px;
+}
+
 .weather-main-location {
   font-size: 32px;
 }
