@@ -25,9 +25,15 @@ class Weather extends Component {
   render() {
     return (
       <div className="container">
-        <WeatherCurrently data={this.state.currently} />
-        <WeatherHourly data={this.state.hourly} />
-        <WeatherDaily data={this.state.daily} />
+        <div className="row justify-content-center">
+          <WeatherCurrently data={this.state.currently} />
+        </div>
+        <div className="row justify-content-center mb-5">
+          <WeatherHourly data={this.state.hourly} />
+        </div>
+        <div className="row justify-content-center">
+          <WeatherDaily data={this.state.daily} />
+        </div>
       </div>
     );
   }
