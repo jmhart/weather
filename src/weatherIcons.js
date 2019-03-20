@@ -1,5 +1,6 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
+  faCloud,
   faCloudSunRain,
   faCloudShowersHeavy,
   faSnowflake,
@@ -9,6 +10,7 @@ import {
 
 function init() {
   library.add(
+    faCloud,
     faCloudSunRain,
     faCloudShowersHeavy,
     faSnowflake,
