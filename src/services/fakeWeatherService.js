@@ -2,7 +2,7 @@ const currentWeather = {
   location: "Chicago",
   description: "Mostly Sunny",
   time: "Sunday",
-  icon: "cloudy",
+  icon: "cloud",
   temp: 40
 };
 
@@ -10,84 +10,85 @@ const hourlyWeather = [
   {
     id: 1,
     time: "10AM",
-    icon: "cloudy",
+    icon: "cloud-sun-rain",
     temp: 41
   },
   {
     id: 2,
     time: "11AM",
-    icon: "rain",
+    icon: "cloud-showers-heavy",
     temp: 41
   },
   {
     id: 3,
     time: "12PM",
-    icon: "cloudy",
+    icon: "snowflake",
     temp: 42
   },
   {
     id: 4,
     time: "1PM",
-    icon: "cloudy",
+    icon: "sun",
     temp: 42
   },
   {
     id: 5,
     time: "2PM",
-    icon: "cloudy",
+    icon: "sun",
     temp: 43
   },
   {
     id: 6,
     time: "3PM",
-    icon: "cloudy",
+    icon: "sun",
     temp: 43
   },
   {
     id: 7,
     time: "4PM",
-    icon: "cloudy",
+    icon: "cloud-sun",
     temp: 44
   },
   {
     id: 8,
     time: "5PM",
-    icon: "cloudy",
+    icon: "cloud-sun",
     temp: 45
   },
   {
     id: 9,
     time: "6PM",
-    icon: "cloudy",
+    icon: "cloud-sun",
     temp: 45
   },
   {
     id: 10,
     time: "7PM",
+    icon: "cloud",
     temp: 46
   },
   {
     id: 11,
     time: "8PM",
-    icon: "cloudy",
+    icon: "cloud",
     temp: 45
   },
   {
     id: 12,
     time: "9PM",
-    icon: "rain",
+    icon: "cloud-sun-rain",
     temp: 44
   },
   {
     id: 13,
     time: "10PM",
-    icon: "rain",
+    icon: "cloud-sun-rain",
     temp: 44
   },
   {
     id: 14,
     time: "11PM",
-    icon: "cloudy",
+    icon: "cloud",
     temp: 43
   }
 ];
@@ -98,6 +99,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Mostly Sunny",
     time: "Sunday",
+    icon: "cloud-sun-rain",
     temp: 47
   },
   {
@@ -105,6 +107,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Cloudy",
     time: "Monday",
+    icon: "cloud-sun-rain",
     temp: 65
   },
   {
@@ -112,6 +115,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Sunny",
     time: "Tuesday",
+    icon: "cloud",
     temp: 66
   },
   {
@@ -119,6 +123,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Rain",
     time: "Wednesday",
+    icon: "cloud",
     temp: 53
   },
   {
@@ -126,6 +131,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Mostly Sunny",
     time: "Thursday",
+    icon: "cloud-sun",
     temp: 32
   },
   {
@@ -133,6 +139,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Snow",
     time: "Friday",
+    icon: "cloud-sun",
     temp: 31
   },
   {
@@ -140,6 +147,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Mostly Sunny",
     time: "Saturday",
+    icon: "snowflake",
     temp: 48
   },
   {
@@ -147,6 +155,7 @@ const dailyWeather = [
     location: "Chicago",
     description: "Mostly Sunny",
     time: "Sunday",
+    icon: "snowflake",
     temp: 33
   }
 ];
