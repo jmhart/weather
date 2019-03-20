@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WeatherDaily = ({ data }) => {
   const weatherRows = data.map(d => (
-    <tr>
+    <tr key={d.id}>
       <td>{d.time}</td>
       <td>
         <FontAwesomeIcon icon={d.icon} />
