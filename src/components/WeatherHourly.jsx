@@ -7,11 +7,7 @@ const WeatherHourly = ({ data }) => {
       <WeatherItem dayOfWeek={d.time} temp={d.temp} />
     </div>
   ));
-  return (
-    <div className="container">
-      <div className="row">{weatherItems}</div>
-    </div>
-  );
+  return <div className="row">{weatherItems}</div>;
 };
 
 export default WeatherHourly;
