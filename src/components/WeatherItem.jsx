@@ -1,17 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class WeatherItem extends Component {
-  state = {};
-  render() {
-    return (
-      <div className="weather-item">
-        <div className="weather-item-day">Friday</div>
-        <FontAwesomeIcon icon="cloud-sun-rain" />
-        <div className="weather-item-temp">32</div>
-      </div>
-    );
-  }
-}
+const WeatherItem = ({ dayOfWeek, icon, temp }) => {
+  return (
+    <div className="weather-item">
+      <div className="weather-item-day">{dayOfWeek}</div>
+      <FontAwesomeIcon icon="cloud-sun-rain" />
+      <div className="weather-item-temp">{temp}&#176;</div>
+    </div>
+  );
+};
 
 export default WeatherItem;
